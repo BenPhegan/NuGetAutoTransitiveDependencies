@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NHibernate</id>
+    <version>3.0.0.4000</version>
+    <title>NHibernate</title>
+    <authors>Fabio Maulo</authors>
+    <owners>Fabio Maulo</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl-2.1.html</licenseUrl>
+    <projectUrl>http://nhforge.org/</projectUrl>
+    <iconUrl>https://nugetgallery.blob.core.windows.net/icons/NHibernate.3.0.0.4000.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NHibernate 3 - NHibernate is a mature, open source object-relational mapper for the .NET framework. It's actively developed , fully featured and used in thousands of successful projects.</description>
+    <summary>NHibernate is a mature, open source object-relational mapper for the .NET framework.</summary>
+    <tags>ORM DataBase C#</tags>
+    <dependencies>
+      <dependency id="Iesi.Collections" version="1.0.1" />
+      <dependency id="Antlr" version="3.1.3.42154" />
+      <dependency id="Castle.Core" version="2.5.1" />
+    </dependencies>
+    <references>
+      <reference file="NHibernate.ByteCode.Castle.dll" />
+      <reference file="NHibernate.dll" />
+      <reference file="Remotion.Data.Linq.dll" />
+    </references>
+  </metadata>
+</package>

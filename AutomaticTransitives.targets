@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    
+    <!-- Probably should infer x86/x64/Framework here and restrict search to provide only compatible assemblies... -->
+    <ItemGroup>
+      <NuGetSearchPathFiles Include="$(SolutionDir)packages\**\*.dll" />
+    </ItemGroup>
+     
+    <Target Name="BeforeResolveReferences">
+        <Message Text="Adding NuGet Package Assemblies to AssemblySearchPaths..." />
+        <RemoveDuplicates Inputs="@(NuGetSearchPathFiles->'%(RootDir)%(Directory)')">    
+            <Output TaskParameter="Filtered" ItemName="NuGetSearchPaths" />
+        </RemoveDuplicates>
+        <CreateProperty Value="@(NuGetSearchPaths);$(AssemblySearchPaths)">
+            <Output TaskParameter="Value" PropertyName="AssemblySearchPaths" />
+        </CreateProperty>
+    </Target>
+</Project>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Castle.Activerecord</id>
+    <version>3.0.0.1</version>
+    <title>Castle.Activerecord</title>
+    <authors>Markus Zywitza</authors>
+    <owners>Markus Zywitza</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <projectUrl>http://www.castleproject.org/activerecord/</projectUrl>
+    <iconUrl>http://www.castleproject.org/images/cp_logo32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>3.0 Beta of Castle Activerecord</description>
+    <summary>The enterprise data mapping pattern implemented using NHibernate.</summary>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <tags>Castle activerecord orm NHibernate</tags>
+    <dependencies>
+      <dependency id="NHibernate" version="3.0.0.4000" />
+      <dependency id="Castle.Components.Validator" version="2.5.0" />
+    </dependencies>
+    <references>
+      <reference file="Castle.ActiveRecord.dll" />
+      <reference file="Castle.ActiveRecord.Web.dll" />
+      <reference file="NHibernate.Search.dll" />
+    </references>
+  </metadata>
+</package>
